@@ -60,7 +60,7 @@ function App() {
     getStripeApiKey();
   }, [])
   return (
-    <Router>
+    <Router basename="/ecommerce_fronyend">
       <Header />
       {isAuthenticated&&<UserOptions user={user} />}
       <Routes>
